@@ -328,7 +328,7 @@ export const DEFAULT_SHORTCUTS = {
         text: "Last Quarter",
         period: {
             start: formatDate(dayjs().subtract(1, 'quarter').startOf("quarter")),
-            end: formatDate(dayjs().subtract(1, 'quarter').EndOf("quarter"))
+            end: formatDate(dayjs().subtract(1, 'quarter').endOf("quarter"))
         }
     },
     currentYear: {
@@ -342,7 +342,7 @@ export const DEFAULT_SHORTCUTS = {
         text: "Last Year",
         period: {
             start: formatDate(dayjs().subtract(1, 'year').startOf("year")),
-            end: formatDate(dayjs().subtract(1, 'year').EndOf("year"))
+            end: formatDate(dayjs().subtract(1, 'year').endOf("year"))
         }
     },
     YearToDate: {
