@@ -327,8 +327,8 @@ export const DEFAULT_SHORTCUTS = {
     lastQuarter: {
         text: "Last Quarter",
         period: {
-            start: formatDate(dayjs().subtract(1, 'quarter').startOf("quarter")),
-            end: formatDate(dayjs().subtract(1, 'quarter').endOf("quarter"))
+            start: formatDate(dayjs().subtract(1, "quarter").startOf("quarter")),
+            end: formatDate(dayjs().subtract(1, "quarter").endOf("quarter"))
         }
     },
     currentYear: {
@@ -341,8 +341,8 @@ export const DEFAULT_SHORTCUTS = {
     lastYear: {
         text: "Last Year",
         period: {
-            start: formatDate(dayjs().subtract(1, 'year').startOf("year")),
-            end: formatDate(dayjs().subtract(1, 'year').endOf("year"))
+            start: formatDate(dayjs().subtract(1, "year").startOf("year")),
+            end: formatDate(dayjs().subtract(1, "year").endOf("year"))
         }
     },
     YearToDate: {
@@ -355,8 +355,8 @@ export const DEFAULT_SHORTCUTS = {
     lastYearToDate: {
         text: "L-YTD",
         period: {
-            start: formatDate(dayjs().subtract(1, 'year').startOf("year")),
-            end: formatDate(dayjs().subtract(1, 'year'))
+            start: formatDate(dayjs().subtract(1, "year").startOf("year")),
+            end: formatDate(dayjs().subtract(1, "year"))
         }
     }
 };
