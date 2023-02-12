@@ -1,6 +1,9 @@
 import dayjs from "dayjs";
 
 import { formatDate, previousMonth } from "../helpers";
+import quarterOfYear from 'dayjs/plugin/quarterOfYear'
+
+dayjs.extend(quarterOfYear)
 
 export const COLORS = [
     "blue",
