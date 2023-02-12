@@ -288,7 +288,7 @@ export const DEFAULT_SHORTCUTS = {
     past: [
         {
             daysNumber: 7,
-            text: "Last 7 days",
+            text: "Last 7 Days",
             period: {
                 start: formatDate(dayjs().subtract(7, "d")),
                 end: formatDate(dayjs())
@@ -296,7 +296,7 @@ export const DEFAULT_SHORTCUTS = {
         },
         {
             daysNumber: 30,
-            text: "Last 30 days",
+            text: "Last 30 Days",
             period: {
                 start: formatDate(dayjs().subtract(30, "d")),
                 end: formatDate(dayjs())
@@ -304,17 +304,59 @@ export const DEFAULT_SHORTCUTS = {
         }
     ],
     currentMonth: {
-        text: "This month",
+        text: "This Month",
         period: {
             start: formatDate(dayjs().startOf("month")),
             end: formatDate(dayjs().endOf("month"))
         }
     },
     pastMonth: {
-        text: "Last month",
+        text: "Last Month",
         period: {
             start: formatDate(previousMonth(dayjs()).startOf("month")),
             end: formatDate(previousMonth(dayjs()).endOf("month"))
+        }
+    },
+    currentQuarter: {
+        text: "Last Quarter",
+        period: {
+            start: formatDate(dayjs().startOf("quarter")),
+            end: formatDate(dayjs().endOf("quarter"))
+        }
+    },
+    lastQuarter: {
+        text: "Last Quarter",
+        period: {
+            start: formatDate(dayjs().subtract(1, 'quarter').startOf("quarter")),
+            end: formatDate(dayjs().subtract(1, 'quarter').EndOf("quarter"))
+        }
+    },
+    currentYear: {
+        text: "Current Year",
+        period: {
+            start: formatDate(dayjs().startOf("year")),
+            end: formatDate(dayjs().endOf("year"))
+        }
+    },
+    lastYear: {
+        text: "Last Year",
+        period: {
+            start: formatDate(dayjs().subtract(1, 'year').startOf("year")),
+            end: formatDate(dayjs().subtract(1, 'year').EndOf("year"))
+        }
+    },
+    YearToDate: {
+        text: "YTD",
+        period: {
+            start: formatDate(dayjs().startOf("year")),
+            end: formatDate(dayjs())
+        }
+    },
+    lastYearToDate: {
+        text: "L-YTD",
+        period: {
+            start: formatDate(dayjs().subtract(1, 'year').startOf("year")),
+            end: formatDate(dayjs().subtract(1, 'year'))
         }
     }
 };
